@@ -1,0 +1,237 @@
+/* Основные стили */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Шапка */
+.header {
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Контент */
+.content {
+    padding: 20px;
+}
+
+/* Футер */
+.footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+}
+/* Стили для боковой панели */
+.sidebar {
+    z-index: 1050;
+    width: 250px;
+    background-color: #e4e4e4;
+    padding: 20px;
+    padding-top: 65px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+/* Скрыть боковое меню на экранах меньше 992px */
+@media (max-width: 991px) {
+    .sidebar {
+        transform: translateX(-100%); /* Скрыть меню по умолчанию */
+        padding-top: 20px;
+    }
+
+    .sidebar.open {
+        transform: translateX(0); /* Показывать меню, если оно открыто */
+    }
+}
+
+/* Стили для бургер-меню */
+#burger-menu {
+    display: none;
+    z-index: 1052;
+}
+.asd {
+    display: none;
+}
+@media (max-width: 991px) {
+    .asd {
+        display: block;
+    }
+    #burger-menu {
+        z-index: 1051;
+        display: block;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        z-index: 1000;
+        cursor: pointer;
+    }
+}
+
+/* Дополнительные стили для контейнера */
+.wrapper {
+    margin-left: 250px;
+    transition: margin-left 0.3s ease;
+}
+
+@media (max-width: 991px) {
+    .wrapper {
+        margin-left: 0;
+    }
+}
+
+.navbar-toggler-icon {
+    z-index: 1051; /* Устанавливаем высокий z-index для бургер-меню */
+}
+
+.doctor-list {
+    display: flex;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    gap: 30px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+  }
+
+  
+.doctor-item {
+    width: 200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .doctor-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .doctor-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  .doctor-card h4 {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #007bff;
+  }
+  
+  .doctor-card p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 5px;
+  }
+  
+  /* Анимация при наведении */
+  .doctor-item:hover .doctor-card {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .doctor-item a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Адаптивность для мобильных устройств */
+  @media (max-width: 768px) {
+    .doctor-item {
+      width: 100%;
+      max-width: 300px;
+    }
+  
+    .doctor-card h4 {
+      font-size: 1rem;
+    }
+  
+    .doctor-card p {
+      font-size: 0.8rem;
+    }
+  }
+
+  .table th,
+  .table td {
+    vertical-align: middle;
+  }
+
+  .table th {
+    background-color: #007bff;
+    color: white;
+  }
+
+  .table-striped tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+  }
+
+  #appointment-btn {
+    margin-top: 30px;
+  }
+  /* Прокручиваемый контейнер для таблицы */
+.table-responsive {
+    overflow-x: auto;
+  }
+
+
+  /* Стили для навигации */
+.nav-link {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #f0f0f0;
+    color: #007bff;
+}
+
+/* Стили для выпадающего меню */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+
+.dropdown-item {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #333;
+    font-size: 0.9rem;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background-color: #f0f0f0;
+    color: #007bff;
+}
+
+/* Позиционирование выпадающего меню */
+#services-link {
+    position: relative;
+}
+
+/* Стили для отображения выпадающего меню при наведении */
+.dropdown:hover  .dropdown-menu {
+    display: block;
+}

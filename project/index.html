@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Рахат - медицинский центр Алматы</title>
+    <!-- Подключение Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Подключение кастомных стилей -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="d-flex flex-column min-vh-100">
+      <!-- Шапка -->
+      <div id="header"></div>
+
+      <!-- Основная часть: контент + боковая панель -->
+      <div class="wrapper d-flex flex-grow-1">
+        <!-- Сайдбар -->
+        <div id="burger-menu" class="navbar-toggler">
+          <span class="navbar-toggler-icon">🍔</span>
+        </div>
+
+        <div id="navbar" class="sidebar"></div>
+
+        <!-- Основной контент -->
+        <div class="container flex-grow-1 mb-3">
+          <div class="main mt-4">
+            <h3 class="big-title">Рахат - медицинский центр Алматы</h3>
+            <p>
+              Сеть медицинских центров «Рахат» начала свою деятельность в 2011 году. За 10 лет открыты 5 медицинских центров в городе Алматы, которые на сегодняшний день обслуживают более 260 000 жителей и гостей города.
+            </p>
+            <div class="text-center my-4">
+                <img src="./img/photo00.jpg" alt="Рахат - медицинский центр Алматы" class="main-image img-fluid rounded shadow">
+              </div>
+            <h3 class="big-title">Наши клиники</h3>
+            <ol class="clinic-list list-group list-group-numbered mb-4">
+              <li class="list-group-item">Центр Взрослой и детской хирургии</li>
+              <li class="list-group-item">Центр Профилактики и семейной медицины</li>
+              <li class="list-group-item">Центр Женского здоровья и родильный дом</li>
+              <li class="list-group-item">Институт Акушерства, Гинекологии и Хирургии в г. Астана</li>
+              <li class="list-group-item">Центр ЛОР и аллергологии</li>
+            </ol>
+
+            <!-- Кнопка записи -->
+            <div class="text-center">
+                <button id="appointment-btn" class="btn btn-primary btn-lg" onclick="window.location.href='./form.html';">
+                  Записаться на приём
+                </button>
+              </div>
+              
+          </div>
+        </div>
+      </div>
+
+      <!-- Футер -->
+      <div id="footer"></div>
+    </div>
+
+    <!-- Подключение Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

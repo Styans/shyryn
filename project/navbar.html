@@ -1,0 +1,54 @@
+<button id="close-menu" class="btn btn asd" onclick="closeSidebar()">❌</button>
+<h4>Навигация</h4>
+<hr class="my-4" />
+
+<a href="./index.html" class="nav-link">🏠 Главная</a>
+<div class="dropdown">
+  <a href="./services.html" class="nav-link" id="services-link">🛠 Услуги</a>
+
+  <!-- Выпадающее меню -->
+  <div class="dropdown-menu" id="services-menu">
+    <a href="cons.html" class="dropdown-item">Консультация врача</a>
+    <a href="ambulatory-surgery.html" class="dropdown-item">Амбулаторная хирургия</a>
+    <a href="laboratory-tests.html" class="dropdown-item">Лабораторные анализы</a>
+    <a href="surgical-intervention.html" class="dropdown-item">Хирургическое вмешательство</a>
+  </div>
+</div>
+
+<a href="./doctors.html" class="nav-link">👓 Врачи</a>
+<a href="./contact.html" class="nav-link">📩 Контакты</a>
+<hr class="my-4" />
+
+<h2 class="text-center mb-4">Записаться на прием</h2>
+    
+<!-- Форма записи на прием -->
+<form>
+  <div class="mb-3">
+    <label for="name" class="form-label">Имя</label>
+    <input type="text" class="form-control" id="name" placeholder="Введите ваше имя" required>
+  </div>
+  
+  <div class="mb-3">
+    <label for="phone" class="form-label">Номер телефона</label>
+    <input type="tel" class="form-control" id="phone" placeholder="Введите ваш номер телефона" required>
+  </div>
+  
+  <div class="mb-3">
+    <label for="doctor" class="form-label">Выберите врача</label>
+    <select class="form-select" id="doctor" required>
+      <option selected>Выберите врача...</option>
+      <option value="1">Адилова Сауле Каиржановна (Педиатр, аллерголог)</option>
+      <option value="2">Кенеева Гульжан Карабековна (Терапевт)</option>
+      <option value="3">Мадьяров Валентин Манарбекович (Хирург)</option>
+      <option value="4">Лигай Зоя Николаевна (Кардиолог)</option>
+      <option value="5">Байсариев Мухтар Досалиевич (Невролог)</option>
+    </select>
+  </div>
+  
+  <div class="mb-3">
+    <label for="appointment-date" class="form-label">Дата и время</label>
+    <input type="datetime-local" class="form-control" id="appointment-date" required>
+  </div>
+  
+  <button type="submit" class="btn btn-primary">Записаться</button>
+</form>

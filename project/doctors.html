@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Наши врачи и расписание</title>
+    <!-- Подключение Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Подключение кастомных стилей -->
+    <link rel="stylesheet" href="style.css" />
+    
+  </head>
+  <body>
+    <div class="d-flex flex-column min-vh-100">
+      <!-- Шапка -->
+      <div id="header"></div>
+
+      <!-- Основная часть: контент + боковая панель -->
+      <div class="wrapper d-flex flex-grow-1">
+        <!-- Сайдбар -->
+        <div id="burger-menu" class="navbar-toggler">
+          <span class="navbar-toggler-icon">🍔</span>
+        </div>
+
+        <div id="navbar" class="sidebar"></div>
+
+        <!-- Основной контент -->
+        <div class="container flex-grow-1 mb-3">
+          <div class="main mt-4">
+            <h3 class="big-title text-center">Наши врачи</h3>
+
+            <!-- Список врачей -->
+            <div class="doctor-list">
+                <div class="doctor-item">
+                  <a href="doctor1.html">
+                    <div class="doctor-card">
+                      <img src="img/adia.jpg" alt="Адилова Сауле Каиржановна">
+                      <h4>Адилова Сауле Каиржановна</h4>
+                      <p>Специализация: аллерголог</p>
+                      <p>Опыт работы: 29 лет</p>
+                    </div>
+                  </a>
+                </div>
+          
+                <div class="doctor-item">
+                  <a href="doctor2.html">
+                    <div class="doctor-card">
+                      <img src="img/photo2.jpg" alt="Кенеева Гульжан Карабековна">
+                      <h4>Кенеева Гульжан Карабековна</h4>
+                      <p>Специализация: Терапевт</p>
+                      <p>Опыт работы: 10 лет</p>
+                    </div>
+                  </a>
+                </div>
+          
+                <div class="doctor-item">
+                  <a href="doctor3.html">
+                    <div class="doctor-card">
+                      <img src="img/photo3.jpg" alt="Мадьяров Валентин Манарбекович">
+                      <h4>Мадьяров Валентин Манарбекович</h4>
+                      <p>Специализация: Хирург</p>
+                      <p>Опыт работы: Более 30 лет</p>
+                    </div>
+                  </a>
+                </div>
+          
+                <div class="doctor-item">
+                  <a href="doctor4.html">
+                    <div class="doctor-card">
+                      <img src="img/photo4.jpg" alt="Лигай Зоя Николаевна">
+                      <h4>Лигай Зоя Николаевна</h4>
+                      <p>Специализация: Кардиолог</p>
+                      <p>Опыт работы: 46 лет</p>
+                    </div>
+                  </a>
+                </div>
+          
+                <div class="doctor-item">
+                  <a href="doctor5.html">
+                    <div class="doctor-card">
+                      <img src="img/photo2.jpg" alt="Байсариев Мухтар Досалиевич">
+                      <h4>Байсариев Мухтар Досалиевич</h4>
+                      <p>Специализация: Невролог</p>
+                      <p>Опыт работы: 23 года</p>
+                    </div>
+                  </a>
+                </div>
+            </div>
+
+            <h3 class="big-title text-center mt-5">Расписание врачей</h3>
+
+            <!-- Таблица расписания врачей -->
+            <div class="table-responsive">
+                <!-- Таблица расписания врачей -->
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>Имя врача</th>
+                      <th>Специализация</th>
+                      <th>Дни приема</th>
+                      <th>Время приема</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Кенеева Гульжан Карабековна</td>
+                      <td>Терапевт</td>
+                      <td>Пн, Ср, Пт</td>
+                      <td>08:00 - 14:00</td>
+                    </tr>
+                    <tr>
+                      <td>Мадьяров Валентин Манарбекович</td>
+                      <td>Хирург</td>
+                      <td>Вт, Чт, Сб</td>
+                      <td>10:00 - 16:00</td>
+                    </tr>
+                    <tr>
+                      <td>Лигай Зоя Николаевна</td>
+                      <td>Кардиолог</td>
+                      <td>Пн, Чт, Вс</td>
+                      <td>09:00 - 15:00</td>
+                    </tr>
+                    <tr>
+                      <td>Байсариев Мухтар Досалиевич</td>
+                      <td>Невролог</td>
+                      <td>Вт, Пт</td>
+                      <td>08:00 - 14:00</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+            <!-- Кнопка записи -->
+            
+          </div>
+        </div>
+      </div>
+
+      <!-- Футер -->
+      <div id="footer"></div>
+    </div>
+
+    <!-- Подключение Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
